@@ -1,0 +1,29 @@
+/* Placeholder Styles */
+#header, .world-stats, #form, #table{
+  background-color: #686e7a;
+  border-radius: 8px;
+}
+.world-stats{
+
+}
+#form{
+  
+}
+#table{
+
+}
+/*  Main Page Styles */
+#app header{
+  text-align: center;
+}
+#world-stats{
+  margin: 0 auto;
+  border: 1px solid #282c34;
+  border-radius: 5px;
+}
+#main{
+  display: flex;
+  flex-direction: column;
+}
+
+
