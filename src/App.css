@@ -13,17 +13,58 @@
 
 }
 /*  Main Page Styles */
+#app {
+  margin: 5% 2% 5% 5%;
+}
 #app header{
   text-align: center;
 }
+#main{
+  margin-top: 5%;
+}
+#stats{
+  display: flex;
+  margin-top: 10%;
+}
 #world-stats{
   margin: 0 auto;
-  border: 1px solid #282c34;
-  border-radius: 5px;
+  text-align: center;
 }
-#main{
+#world-container{
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  height:150px;
 }
-
-
+#confirmed, #recovered, #deaths{
+  border-radius: 15px;
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  font-weight: 700;
+  padding: 50px;
+}
+#confirmed{
+  background-color: rgb(255, 255, 0);
+  color: rgb(0, 0, 0);
+}
+#recovered{
+  background-color: rgb(26, 177, 26);
+}
+#deaths{
+  background-color: rgb(255, 0, 0);
+}
+#country-stats{
+  width: 70%;
+}
+#country-stats h2{
+  text-align: center;
+}
+#table-footer ul{
+  display: flex;
+  justify-content: center;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}

@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import CountryStats from './CountryStats';
 import Pagination from './Pagination';
-import SafetyList from './SafetyList';
 import WorldStats from './WorldStats';
 import '../App.css';
 
@@ -76,10 +75,6 @@ export class App extends Component {
                 <div id="table"></div>
               </section>
             </section>
-
-            <aside>
-              <SafetyList/>
-            </aside>
           </section>
 
         </div>
@@ -100,42 +95,25 @@ export class App extends Component {
           </header>
 
           <section id="main">
-            <section id="stats">
 
-              <section id="world-stats">
+            <section id="world-stats">
                 <h2>World Stats</h2>
                 <WorldStats confirmed={global.TotalConfirmed} recovered={global.TotalRecovered} deaths={global.TotalDeaths} /> 
-              </section>
+            </section>
+
+            <section id="stats">
 
               <section id="country-stats">
 
                 <h2>Country Breakdown</h2>
 
                 <form></form>
-                <table>
-                <thead>
-                    <tr>
-                      <th>Country</th>
-                      <th>Confirmed</th>
-                      <th>Recovered</th>
-                      <th>Deaths</th>
-                      <th>New Confirmed</th>
-                      <th>New Recovered</th>
-                      <th>New Deaths</th>
-                    </tr>
-                </thead>
+          
                 <CountryStats countries={currentRecords} />
                 <Pagination totalRecords={countries.length} recordsPerPage={recordsPerPage} paginate={this.paginate}/>
-                </table>
                 
-
               </section>
-
             </section>
-
-            <aside>
-              <SafetyList/>
-            </aside>
           </section>
       
         </div>

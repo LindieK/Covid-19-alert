@@ -9,15 +9,15 @@ export default function Pagination({totalRecords, recordsPerPage, paginate}) {
     }
 
     return (
-        <tfoot>
-            <ul>
+        <nav id="table-footer" aria-label="Page navigation">
+            <ul className="pagination">
                 {PageNumbers.map(number => (
-                    <li key={number} className="pageItem">
-                        <a href="!#" className="pageLink" onClick={()=> paginate(number)}>{number}</a>
+                    <li key={number} className="page-item">
+                        <a href="!#" className="page-link" onClick={()=> paginate(number)}>{number}</a>
                     </li>
                 ))}
             </ul>
-        </tfoot>
+        </nav>
     )
 }
 
