@@ -1,18 +1,47 @@
 /* Placeholder Styles */
-#header, .world-stats, #form, #table{
-  background-color: #686e7a;
+.lazy-title, #lazy-subtitle, #lazy-total, #lazy-discharged, #lazy-dead, #country-table, .lazy-label{
+  background-color: #afb2b8;
   border-radius: 8px;
 }
-.world-stats{
+.lazy-title, #lazy-subtitle, #lazy-total, #lazy-discharged, #lazy-dead, #country-table{
+  margin: 1.25em auto;
+}
+.lazy-title{
+  height: 1.25em;
+  width: 15.625em; /* 250px/16px */
+}
+#lazy-subtitle{
+  height: 1.25em;
+  width:50%;
+}
+#world-section, #country-section{
+  margin: 5.625em auto;
+}
+#world-table{
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  margin: 1.25em auto;
+}
+#lazy-total, #lazy-discharged, #lazy-dead{
+  height: 3.125em; /* 50px/16px */
+  width: 6.25em;
+}
+.lazy-label{
+  height: 1.25em;
+  width: 9.375em; /* 150px/16px */
+}
+#country-table{
+  width:70%;
+  height: 12.5em; /* 200px/16px */
+}
 
-}
-#form{
-  
-}
-#table{
 
-}
 /*  Main Page Styles */
+body{
+  background-color: #fafbfb;
+  font-size: 16px;
+}
 #app {
   margin: 5% 2% 5% 5%;
 }
@@ -33,30 +62,34 @@
 #world-container{
   display: flex;
   justify-content: space-around;
-  height:150px;
+  height: 9.375em; /* 150px/16px */
+}
+#world-container span{
+  display: block;
+}
+.figure{
+  font-size: 4em; /* 64px/16px*/
 }
 #confirmed, #recovered, #deaths{
-  border-radius: 15px;
-  color: rgb(255, 255, 255);
-  font-size: 32px;
   font-weight: 700;
-  padding: 50px;
+  padding: 3.125em; /* 50px/16px */
 }
 #confirmed{
-  background-color: rgb(255, 255, 0);
-  color: rgb(0, 0, 0);
+  color: blue;
 }
 #recovered{
-  background-color: rgb(26, 177, 26);
+  color: green;
 }
 #deaths{
-  background-color: rgb(255, 0, 0);
+  color:red;
 }
 #country-stats{
   width: 70%;
+  margin: auto;
 }
 #country-stats h2{
   text-align: center;
+  margin: 1em 0;
 }
 #table-footer ul{
   display: flex;
@@ -67,4 +100,19 @@ li{
 }
 a{
   text-decoration: none;
+}
+.page-link{
+  background-color: inherit;
+}
+
+@media screen and (max-width:600px){
+
+}
+
+@media  screen  and (min-width:601px) and (max-width:800px){
+
+}
+
+@media screen and (min-width:801px) and (max-width:1024px){
+  
 }

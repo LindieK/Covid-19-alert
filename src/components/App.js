@@ -63,20 +63,34 @@ export class App extends Component {
     }
     else if(!isLoaded){
       return (
-        <div id="app">
-          <div id="header"></div>
-          <section className="main">
-
-            <section className="stats">
-              <section className="world-stats"></section>
-              <section className="country-stats">
-                <h2>Country Breakdown</h2>
-                <div id="form"></div>
-                <div id="table"></div>
-              </section>
-            </section>
-          </section>
-
+        <div id="lazy-app">
+          <div className="lazy-title"></div>
+          <div id="lazy-subtitle"></div>
+          
+          <div id="world-section">
+            <div className="lazy-title"></div>
+            <div id="world-table">
+              <div>
+                <div id="lazy-total"></div>
+                <div className="lazy-label"></div>
+              </div>
+              
+              <div>
+                <div id="lazy-discharged"></div>
+                <div className="lazy-label"></div>
+              </div>
+              
+              <div>
+                <div id="lazy-dead"></div>
+                <div className="lazy-label"></div>
+              </div>
+            </div>
+          </div>
+      
+          <div id="country-section">
+            <div className="lazy-title"></div>
+            <div id="country-table"></div>
+          </div>
         </div>
       )
     }
@@ -91,7 +105,7 @@ export class App extends Component {
 
           <header>
             <h1>Welcome to COVID Alert!</h1>
-            <h3>Daily accurate numbers of the spread of the Coronavirus around the world.</h3>
+            <small>Daily accurate numbers of the spread of the Coronavirus around the world.</small>
           </header>
 
           <section id="main">
@@ -105,7 +119,7 @@ export class App extends Component {
 
               <section id="country-stats">
 
-                <h2>Country Breakdown</h2>
+                <h2>Country Spread Breakdown</h2>
 
                 <form></form>
           
